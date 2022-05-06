@@ -1,0 +1,33 @@
+{
+    "name": "farshidrezaei/larabbitmq",
+    "description": "Laravel RabbitMq integration.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php-amqplib/php-amqplib": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "Farshid Rezaei",
+            "email": "farshid.net1@yahoo.com",
+            "homepage": "https://farshidrezaei.ir",
+            "role": "Full-Stack Web Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FarshidRezaei\\Larabbitmq\\Providers\\LarabbitmqServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "FarshidRezaei\\Larabbitmq\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

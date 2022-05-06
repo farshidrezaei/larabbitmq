@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ namespace }};
+
+use FarshidRezaei\Larabbitmq\Lib\LarabbitmqQueueConsumeHandler;
+
+class {{ class }} implements LarabbitmqQueueConsumeHandler
+{
+
+    public function handle(mixed $data):void
+    {
+        //todo: consume logic.
+    }
+
+}
