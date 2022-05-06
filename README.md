@@ -58,8 +58,8 @@ you must add this to config/larabbitmq.php like this:
   // ...
   
   'consume-handlers' => [
-    'default_queue'=>App\LarabbitmqConsumeHandlers\ExampleConsumeHandler
-    ]
+    'default_queue'=>App\LarabbitmqConsumeHandlers\ExampleConsumeHandler::class
+  ]
     
   // ...
 ```
