@@ -10,7 +10,7 @@ composer require farshidrezaei/larabbitmq
 
 ## Larabbitmq environment
 
-Set bellow config to `.env` file with your installed node and npm path
+Set bellow config to `.env` file with your installed rabbitmq credential 
 
 ```dotenv  
 LARABBITMQ_RABBIT_HOST=
