@@ -10,12 +10,12 @@ class RabbitMqConnection
 
     public function __construct()
     {
-        if (config('larabbitmq.connections.rabbit.host')) {
+        if (config('larabbitmq.connection.rabbitmq.host')) {
             $this->setConnection(
-                config('larabbitmq.connections.rabbitmq.host'),
-                config('larabbitmq.connections.rabbitmq.port'),
-                config('larabbitmq.connections.rabbitmq.user'),
-                config('larabbitmq.connections.rabbitmq.pass')
+                config('larabbitmq.connection.rabbitmq.host'),
+                config('larabbitmq.connection.rabbitmq.port'),
+                config('larabbitmq.connection.rabbitmq.user'),
+                config('larabbitmq.connection.rabbitmq.pass')
             );
         }
     }
@@ -27,7 +27,7 @@ class RabbitMqConnection
      */
     public function getConnection(): ?AMQPStreamConnection
     {
-        if (config('larabbitmq.connections.rabbit.host')) {
+        if (config('larabbitmq.connection.rabbitmq.host')) {
             return $this->connection;
         }
         return null;
