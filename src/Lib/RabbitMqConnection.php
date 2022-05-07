@@ -10,7 +10,7 @@ class RabbitMqConnection
 
     public function __construct()
     {
-        if (config('database.connections.rabbit.host')) {
+        if (config('larabbitmq.connections.rabbit.host')) {
             $this->setConnection(
                 config('larabbitmq.connections.rabbitmq.host'),
                 config('larabbitmq.connections.rabbitmq.port'),
