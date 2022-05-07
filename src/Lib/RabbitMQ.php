@@ -10,7 +10,7 @@ use PhpAmqpLib\Connection\AMQPStreamConnection;
 
 class RabbitMQ
 {
-    private ?AMQPStreamConnection $connection;
+    private AMQPStreamConnection $connection;
 
     private AMQPChannel $channel;
 
@@ -18,7 +18,7 @@ class RabbitMQ
 
     private string $exchange;
 
-    public function __construct(RabbitMqConnection $connection)
+    public function __construct(AMQPStreamConnection $connection)
     {
         $this->connection = $connection->getConnection();
         if ($this->connection) {
