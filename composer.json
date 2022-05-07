@@ -22,9 +22,7 @@
         }
     },
     "autoload": {
-        "files": [
-            "src/Helpers/helpers.php"
-        ],
+        "files": [],
         "psr-4": {
             "FarshidRezaei\\Larabbitmq\\": "src/"
         }
